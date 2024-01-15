@@ -9,8 +9,9 @@
 body{
       max-width: 1440px;
       font-family: "Mulish", sans-serif;
-      /* margin: 0 135px; */
 }
+
+
 
 
 header {
@@ -58,33 +59,153 @@ li a:hover{
 }
 
 
+/* main section style here */
 
 
+.banner-section{
+      background-image: url(Images/Rectangle\ 2.png), url(Images/Group\ 13\ \(1\)\ \(1\).png);
+      background-repeat: no-repeat;
+      height: 500px;
+      border-radius: 16px;
+      margin: 0 135px;
+      background-size: cover;
+      background-position: center;
 
+}
+.banner-title{
+      color: #FFF;
+      font-size: 64px;
+      font-weight: 800;
+      padding-top: 105px;
+      text-align: center;
+}
+.banner-desc{
+      color: #FFF;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 24px 247px;
+}
+.row{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 185px;
+      padding: 1rem;
+      margin-top: 24px ;
+      background: rgba(255, 255, 255, 0.30);
+      
+}
+.selection-area select,button, input{
+      width: 174px;
+      height: 50px;
+      padding-left: 10px;
+      border-radius: 8px;
+      background-color: #FFF;
+      border: none;
+      color: rgba(19, 19, 24, 0.50);
+}
+.selection-area button{
+      background: #FF5400;
+      padding-right: 40px;
+      color: #fff;
+      
+}
 
+.tours-section{
+      margin: 100px 135px;
+      display: flex;
+      gap: 50px;
+}
+.tours-title{
+      color: #131318;
+      font-size: 40px;
+      font-weight: 800;
+}
+.tours-desc{
+      padding-top: 24px;
+      color: rgba(19, 19, 24, 0.70);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+}
+.list li{
+      padding-top: 16px;
+}
+.btn-primary{
+      color: #FFF;
+      font-size: 20px;
+      font-weight: 800;
+      border-radius: 8px;
+      background: #FF5400;
+      margin-top: 32px;
+}
 
+.destination-section{
+      margin: 0 135px;
+}
+.text-center{
+      text-align: center;
+}
 
+.text-center .tours-desc{
+      width: 643px;
+      margin: 0 auto;
+      padding-bottom: 50px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.images{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-bottom: 24px;
+}
+.images1{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr 1fr 1fr);
+      gap: 24px;
+      margin-bottom: 24px;
+}
+.images2{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr 1fr);
+      gap: 24px;
+}
+.center{
+      position: relative;
+}
+.maldives{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FFF;
+      font-size: 28px;
+      font-weight: 800;
+}
 
 
 @media only screen and (max-width: 600px) {
+      /* common style */
+      .width{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0;
+            margin-left: 10px;
+      }
+      .column{
+            flex-direction: column;
+      }
+
+
       .hamburger {
             display: block;
+            margin-top: 10px;
+            width: 24px;
+            height: 24px;
       }
       header{
-            margin: 20px 5px;
+            margin: 20px 10px;
       }
       header nav {
             position: absolute;
@@ -92,7 +213,7 @@ li a:hover{
             left: -100%;
             top: 70px;
             width: 100%;
-            background: #fff;
+            background: white;
             padding: 30px;
             transition: 0.3s;
       }
@@ -100,6 +221,45 @@ li a:hover{
             left: 0;
       }
       header nav ul {
+            display: block;
+      }
+
+      .banner-section{
+            height: auto;
+            margin: 0px;
+            width: 100%;
+      }
+      .banner-title{
+            font-size: 22px;
+            margin: 0px 0px;
+      }
+      .banner-desc{
+            margin: 0px 15px;
+            width: 80%;
+      }
+      
+      .row{
+            margin: 0;
+            text-align: center;
+      }
+      .selection-area{
+            margin-top: 20px;
+            width: 100%;
+      }
+      .tours-title{
+            font-size: 20px;
+      }
+      .tours-images img{
+            width: 100%;
+      }
+      .all-images img{
+            width: 100%;
+            height: auto;
+      }
+      .destination-section{
+            margin: 0;
+      }
+      .images, .images1, .images2{
             display: block;
       }
 }
