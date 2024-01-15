@@ -1,0 +1,105 @@
+/* font css import here */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+      max-width: 1440px;
+      font-family: "Mulish", sans-serif;
+      /* margin: 0 135px; */
+}
+
+
+header {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 130px;
+}
+header .logo {
+      color: #131318;
+      font-size: 36px;
+      font-weight: 800;
+      padding-top: -30px;
+}
+.logo-position{
+      position: relative;
+      bottom: 10px;
+}
+.name-title{
+      color: #FF5400;
+}
+header nav ul {
+      display: flex;
+      list-style: none;
+      gap: 44px;
+      padding-top: 15px;
+}
+header nav ul li a {
+      text-decoration: none;
+      color: #424247;
+      font-size: 18px;
+      font-weight: 400;
+}
+li a:hover{
+      color: #FF5400;
+}
+.hamburger {
+      cursor: pointer;
+      display: none;
+}
+.hamburger div {
+      width: 30px;
+      height: 3px;
+      margin: 5px 0;
+      background: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+      .hamburger {
+            display: block;
+      }
+      header{
+            margin: 20px 5px;
+      }
+      header nav {
+            position: absolute;
+            width: 100%;
+            left: -100%;
+            top: 70px;
+            width: 100%;
+            background: #fff;
+            padding: 30px;
+            transition: 0.3s;
+      }
+      header #nav_check:checked ~ nav {
+            left: 0;
+      }
+      header nav ul {
+            display: block;
+      }
+}
