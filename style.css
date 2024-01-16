@@ -120,6 +120,8 @@ li a:hover{
       color: #131318;
       font-size: 40px;
       font-weight: 800;
+      text-align: center;
+
 }
 .tours-desc{
       padding-top: 24px;
@@ -134,7 +136,7 @@ li a:hover{
 .btn-primary{
       color: #FFF;
       font-size: 20px;
-      font-weight: 800;
+      font-weight: 600;
       border-radius: 8px;
       background: #FF5400;
       margin-top: 32px;
@@ -145,10 +147,11 @@ li a:hover{
 }
 .text-center{
       text-align: center;
+
 }
 
-.text-center .tours-desc{
-      width: 643px;
+.text-center, .tours-desc{
+      width: 100%;
       margin: 0 auto;
       padding-bottom: 50px;
 }
@@ -169,6 +172,7 @@ li a:hover{
       display: grid;
       grid-template-columns: repeat(2, 1fr 1fr);
       gap: 24px;
+      margin-bottom: 100px;
 }
 .center{
       position: relative;
@@ -182,7 +186,118 @@ li a:hover{
       font-size: 28px;
       font-weight: 800;
 }
+.choose-section{
+      margin: 0 135px;
+}
+.card-container{
+      display: flex;
+      gap: 24px;
+      
+}
+.card{
+      border-radius: 16px;
+      border: 1px solid rgba(251, 181, 99, 0.20);
+      background: rgba(251, 181, 99, 0.05);
+      padding: 32px;
+      
+}
+.card:hover{
+      background: rgba(41, 206, 246, 0.05);
+      cursor: pointer;
+}
+.choose-title{
+      color: #131318;
+      font-size: 24px;
+      font-weight: 800;
+      padding-top: 32px;
+}
+.choose-desc{
+      color: #5A5A5D;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      padding-top: 5px;
+}
+.card1{
+      width: 565px;
+      margin: 0 auto;
+      margin-top: 24px;
+}
 
+.perfect-place-section{
+      margin: 100px 135px;
+      display: flex;
+      gap: 40px;
+}
+.place-info li{
+      color: #131318;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 26px;
+      padding-top: 10px;
+}
+
+.news-letter-section{
+      margin: 0 135px;
+      display: flex;
+      gap: 24px;
+      margin-bottom: 100px;
+}
+.news-letter-info{
+      border-radius: 16px;
+      border: 1px solid #FF5400;
+      padding: 40px;
+
+}
+.news{
+      text-align: left;
+}
+.input-section, input, button{
+      display: block;
+      width: 100%;
+      margin-top: 15px;
+      color: rgba(19, 19, 24, 0.30);
+      font-size: 16px;
+      font-weight: 400;
+      
+}
+.input-section input{
+      border-radius: 8px;
+      background: rgba(19, 19, 24, 0.05);
+}
+hr{
+      background: rgba(19, 19, 24, 0.5);
+}
+
+.text-container-box{
+      border-radius: 16px;
+      background: #FF5400;
+      width: 324px;
+      height: 120px;
+      transform: rotate(-19.628deg);
+      color: #FFF;
+      position: absolute;
+      bottom: 12%;
+      right: 2%;
+
+}
+.text-container-box h5{
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+      padding-top: 20px;
+}
+.text-container-box h3{
+      font-size: 32px;
+      font-weight: 800;
+      text-align: center;
+}
+.news-letter-img{
+      position: relative;
+}
+.news-letter-img img{
+      height: 472px;
+}
 
 @media only screen and (max-width: 600px) {
       /* common style */
@@ -195,8 +310,11 @@ li a:hover{
       }
       .column{
             flex-direction: column;
+            padding-left: 10px;
       }
-
+      .margin{
+            margin: 10px 0px;
+      }
 
       .hamburger {
             display: block;
@@ -248,6 +366,10 @@ li a:hover{
       }
       .tours-title{
             font-size: 20px;
+            padding-top: 30px;
+      }
+      .tours-desc{
+            width: 100%;
       }
       .tours-images img{
             width: 100%;
@@ -255,11 +377,23 @@ li a:hover{
       .all-images img{
             width: 100%;
             height: auto;
+            margin-top: 20px;
       }
       .destination-section{
             margin: 0;
       }
       .images, .images1, .images2{
             display: block;
+      }
+      .card1{
+            width: 100%;
+      }
+      .place-img iframe{
+            width: 100%;
+      }
+      
+      .news-letter-img img{
+            width: 100%;
+            height: auto;
       }
 }
