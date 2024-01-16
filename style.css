@@ -110,6 +110,7 @@ li a:hover{
       background-color: #FFF;
       border: none;
       color: rgba(19, 19, 24, 0.50);
+      margin-top: 15px;
 }
 .selection-area button{
       background: #FF5400;
@@ -260,8 +261,6 @@ li a:hover{
       text-align: left;
 }
 .input-section, input, button{
-      display: block;
-      width: 100%;
       margin-top: 15px;
       color: rgba(19, 19, 24, 0.30);
       font-size: 16px;
